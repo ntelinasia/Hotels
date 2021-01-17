@@ -1,0 +1,269 @@
+/* List PAGE STYLING */
+html, body{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    
+}
+    /* Header SAME FOR ALL PAGES*/
+    header{
+      background: #e7e7e7;
+      color: #565050;
+      position: fixed;
+      top: 0;
+      left:0;
+      width: 100%;
+      height: 60px;
+      z-index: 99999;
+    }
+      /* Orange button since user is in Home Page */
+      .page-home a,
+      .page-home a:active,
+      .page-home a:visited,
+      .page-home a:focus{
+      color:#ff4700;
+      }
+      .page-home a:hover{
+        color:#752600;
+        text-decoration: none;
+      }
+      p.title-header{
+        display: inline-block;
+        max-width: 50%;
+        width: 50%;
+        text-align: center;
+      }
+      .title-menu-list{
+        float: right;
+        width:50%;
+        max-width: 50%;
+        height: 60px;
+        max-height: 60px;
+        text-align:center;
+      }
+        li{
+          list-style-type: none;
+          display: inline-block;
+          padding-right: 10px;
+        }
+          li:last-child{
+            border-left-style: ridge;
+            padding-left: 10px;
+          }
+
+      /* Grey button since is Profile button, not active */
+      a,
+      a:active,
+      a:visited,
+      a:focus{
+        color:#565050;
+        text-decoration: none;
+      }
+      a:hover{
+        color:#2f2c2c;
+        text-decoration: none;
+      }
+        
+    /* Main */
+    main{
+      min-height: 1000px;
+      height:1000px;
+      margin-top: 50px;
+      padding-left:10%;
+      padding-right:10%;
+      
+    }
+    p{
+      text-align: left;
+    } 
+    h1{
+      font-size: 20px;
+      color: #000;
+      font-weight: 400;
+      }
+      .filter-search h1{
+        text-align: center;
+        color: #ff4700;
+      }
+      .search-results h1{
+        background: #ff4700;
+          border-radius: 5px;
+          color: #fff;
+          height: auto;
+          padding: 10px;
+          border: none;
+      }
+    h2{
+      font-weight: 400;
+      margin-top:5px;
+      margin-bottom: 0px;
+    }
+    h3{
+      font-weight: 300;
+      font-size: 16px;
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+    aside{
+      margin-top: 60px;
+      color: #ff4700;
+      height: 600px;
+      float: left;
+      width:30%;
+    }
+    form{
+      background: #fff;
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      padding: 25px;
+      border-radius: 12px;
+      display: inline-block;
+      text-align: center;
+      }
+        label{
+          color:#6b6767;
+          margin-bottom: 15px;
+          display: inline-block;
+        }
+        form input[type=submit],
+        form input[type=submit]:active,
+        form input[type=submit]:visited,
+        form input[type=submit]:focus{
+          background: #ff4700;
+          border-radius: 5px;
+          color: #fff;
+          width: 100%;
+          height: auto;
+          padding: 10px;
+          border: none;
+        }
+        .listing-description a, 
+        .listing-description a:active ,
+        .listing-description a:visited,
+        .listing-description a:focus{
+          background: #ff4700;
+          border-radius: 5px;
+          color: #fff;
+          float: right;
+          padding: 10px;
+          border: none;
+        }
+        .listing-description a:hover{
+          background: #752600;
+          border-radius: 5px;
+          color: #fff;
+          float: right;
+          padding: 10px;
+          border: none;
+        }
+
+
+    /* Search Results div */
+    .search-results {
+      width: 65%;
+      max-width: 70%;
+      padding-left: 25px;
+      margin-top: 50px;
+      float: right;
+   }
+      .listing{
+        max-height: 250px;
+        height:auto; 
+        min-height: 200px; /**Min height should be the same with aside height**/
+        width:100%;
+        margin-bottom: 20px;
+      }
+        .listing aside{
+            max-width: 20%;
+            
+            margin:0px;
+            height:auto;
+            min-height:200px;
+        }
+            img{
+              width:80%;
+              height: auto;
+              float: left;
+              padding-right:10%;
+              padding-top:10%;
+              padding-bottom:10%;
+            }
+        .listing-description{
+            max-width: 80%;
+            float: right;
+            /* max-height:200px; */
+            margin:0px;
+            padding: 0px;;
+            /* padding-left: 20px; */
+        }
+    
+    /* Footer */
+    footer{
+        background: #e7e7e7;
+        color: #565050;
+        width: 100%;
+        height:30px;
+        margin:0;
+        border-top: 3px solid #929292;
+        bottom: 0;
+        /* position: relative; */
+        position: fixed;
+    }
+        footer p{
+            font-weight: 300;
+            font-size: 13px;
+            text-align: center;
+            padding-top: 7px;
+            margin-top:0px;
+        }
+
+/* Responsive Design */
+@media(max-width:1200px){
+  .listing-description p{
+    max-height: 50px;
+    overflow:scroll;
+    height:100px;
+  }
+  form input[type=submit],
+        form input[type=submit]:active,
+        form input[type=submit]:visited,
+        form input[type=submit]:focus{
+    margin-top: 10px;
+  }
+}
+@media(max-width:700px){
+
+  main{
+    padding:0px;
+    min-height:300px;
+  }
+
+  aside{
+    width:100%;
+    height: auto;
+    float: none;
+  }
+  .search-results{
+    width:90%;
+    float: none;
+    max-width: 90%;
+    padding:0px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top:20px;
+
+
+  }
+}
+@media(max-width:450px){
+  .title-menu-list a{
+    font-size: 0px;
+  }
+  .title-menu-list i{
+    font-size:22px;
+  }
+}

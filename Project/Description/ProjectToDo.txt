@@ -1,0 +1,14 @@
+Things to fix:
+1) Correct all paths, use autoload - DONE
+2) Fix button colors.
+3) Hide buttons using javascript -if user not logged in or registered (cookies?) -DONE
+4) Links to correct pages 
+5) Check fields and inputs using JavaScript, mainly log-in and register pages -DONE
+6) Establish database connection, and form submits, using php -DONE 
+7) EXCEPTIONS
+8) Replace aside form in list.php with sidebar
+
+Doing:
+Check fields using Javascript- DONE
+Log In page - DONE
+create profile page 

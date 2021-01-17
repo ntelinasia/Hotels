@@ -1,0 +1,209 @@
+/* List PAGE STYLING */
+html, body{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+    /* Header SAME FOR ALL PAGES*/
+    header{
+      background: #e7e7e7;
+      color: #565050;
+      position: fixed;
+      top: 0;
+      left:0;
+      width: 100%;
+      height: 60px;
+      z-index: 99999;
+    }
+      /* Orange button since user is in Home Page */
+      .page-home a,
+      .page-home a:active,
+      .page-home a:visited,
+      .page-home a:focus{
+      color:#ff4700;
+      }
+      .page-home a:hover{
+        color:#752600;
+        text-decoration: none;
+      }
+      p.title-header{
+        display: inline-block;
+        max-width: 50%;
+        width: 50%;
+        text-align: center;
+        margin-top: 1rem;     
+      }
+      .title-menu-list{
+        float: right;
+        width:50%;
+        max-width: 50%;
+        height: 60px;
+        max-height: 60px;
+        text-align:center;
+      }
+        .title-menu-list ul{
+            margin-top: 1rem;
+        }
+            li{
+            list-style-type: none;
+            display: inline-block;
+            padding-right: 10px;
+            }
+            li:last-child{
+                border-left-style: ridge;
+                padding-left: 10px;
+            }
+
+      /* Grey button since is Profile button, not active */
+      a,
+      a:active,
+      a:visited,
+      a:focus{
+        color:#565050;
+        text-decoration: none;
+      }
+      a:hover{
+        color:#2f2c2c;
+        text-decoration: none;
+      }
+
+      /* Main */
+      main{
+        min-height: 1000px;
+        margin-top: 60px;
+        padding-left:10%;
+        padding-right:10%;
+      }
+      p{
+        text-align: left;
+        /* overflow: scroll; */
+        max-height: 150px;
+      } 
+      h1{
+        font-size: 20px;
+        color: #000;
+        font-weight: 400;
+        text-align:left;
+        }
+        .filter-search h1{
+          text-align: center;
+          color: #ff4700;
+        }
+        .search-results h1{
+          background: #ff4700;
+            border-radius: 5px;
+            color: #fff;
+            height: auto;
+            padding: 10px;
+            border: none;
+        }
+      h2{
+          text-align:left;
+        font-weight: 400;
+        margin-top:5px;
+        margin-bottom: 0px;
+      }
+      h3{
+          text-align:left;
+        font-weight: 300;
+        font-size: 16px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+      }
+
+      div{
+          max-width: 100%;
+          text-align: center;
+      }
+
+
+       .user-info{
+          float: right;
+          margin-right: 20%;
+          border-left-style: ridge;
+          padding-left: 10px;
+      }
+
+      /* Listing Styling */
+      aside{
+        margin-top: 60px;
+        color: #ff4700;
+        height: 600px;
+        float: left;
+        width:30%;
+      }
+      .listing{
+        max-height: 250px;
+        height:auto; 
+        min-height: 150px; /**Min height should be the same with aside height**/
+        width:100%;
+        margin-bottom: 20px;
+      }
+        .listing aside{
+            max-width: 20%;
+            
+            margin:0px;
+            height:auto;
+        }
+            img{
+              width:80%;
+              height: auto;
+              float: left;
+              padding-right:10%;
+              /* padding-top:10%; */
+              padding-bottom:10%;
+            }
+        .listing-description{
+            max-width: 80%;
+            float: right;
+            /* max-height:200px; */
+            margin:0px;
+            padding: 0px;;
+            /* padding-left: 20px; */
+        }
+            .listing-description a, 
+            .listing-description a:active ,
+            .listing-description a:visited,
+            .listing-description a:focus{
+            background: #ff4700;
+            border-radius: 5px;
+            color: #fff;
+            float: right;
+            padding: 10px;
+            border: none;
+            }
+
+    main .favorite-btn{
+        background: #ff4700;
+        border-radius: 5px;
+        color: #fff;
+        float: right;
+        border: none;
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+        line-height: 2rem;
+    }
+
+
+      /* Footer */
+    footer{
+        background: #e7e7e7;
+        color: #565050;
+        width: 100%;
+        height:30px;
+        margin:0;
+        border-top: 3px solid #929292;
+        bottom: 0;
+        position: relative;
+    }
+        footer p{
+            font-weight: 300;
+            font-size: 13px;
+            text-align: center;
+            padding-top: 7px;
+            margin-top:0px;
+        }
+        
